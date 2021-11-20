@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.principal {
+    width: 90%;
+    background:#cc0;
+    margin: 0 auto;
+}
+/*===========================================*/
+header{
+    float: left;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+/*===========================================*/
+.logo {
+    float: left;
+    width: 25%;
+}
+.logo img{
+    float: left;
+    width: 100%;
+}
+/*===========================================*/
+.texto1{
+    width: 50%;
+    float: left;
+    margin:0 0 0 2%;
+    background : #f5eccc;
+}
+.texto1 h1{
+    width: 96%;
+    margin:0 2% 0 2%;
+    float: left;
+    text-align: justify;
+    background : #f5eccc;
+}
+.texto1 .pT {
+    width: 96%;
+    margin: 0 2% 0 2%;
+    float: left;
+    background : #f5eccc;
+}
+/*===========================================*/
+.p1{
+    width: 45%;
+    float: left;
+    margin: 2% 1% 2% 2%;
+    text-align: justify;
+}
+.p2{
+    width: 45%;
+    float: left;
+    margin: 2% 1% 2% 2%;
+    text-align: justify;
+}
+.p2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/*===========================================*/
+.brecha{
+    float: right;
+    width: 20%;
+    margin: 0 0 0 2%;
+}
+.brecha img{
+    width: 100%;
+}
+/*===========================================*/
+nav{
+    width: 100%;
+    float: left;
+    background: #30318d;
+}
+nav p{
+    width: 10%;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 1% 1% 1% 1%;
+}
+nav a{
+    width: 10%;
+    text-align: center;
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    margin: 1% 1% 1% 0;
+}
+/*=========================================*/
+.panelizquierdo{
+    background : #dfdcce;
+    float: left;
+    width: 25%;
+    margin: 2% 0 0 0;
+}
+/*--------------------------*/
+.editorial{
+    float: left;
+    margin: 10% 2% 0 5%;
+    width: 90%;
+}
+.editorial h1{
+    border-top: #cc0 5px solid;
+    width: 50%;
+}
+.editorial p{
+    font-family: Segoe Print;
+    font-size: 90%;
+}
+.editorial a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/*--------------------------*/
+.actualidad {
+    float: left;
+    margin: 10% 2% 0 5%;
+    width: 90%;
+}
+.actualidad h1 {
+    border-top: rgb(145, 39, 39) 5px solid;
+    width: 50%;
+}
+.actualidad p {
+    font-size: 90%;
+}
+.actualidad a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/*--------------------------*/
+.tendencias {
+    float: left;
+    margin: 10% 2% 0 5%;
+    width: 90%;
+}
+.tendencias h1 {
+    border-top: rgb(83, 30, 104) 5px solid;
+    width: 50%;
+}
+.tendencias img{
+    width: 100%;
+}
+.tendencias p {
+    font-size: 90%;
+}
+.tendencias a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/*--------------------------*/
+
+.deportes {
+    float: left;
+    margin: 10% 2% 0 5%;
+    width: 90%;
+}
+.deportes h1 {
+    border-top: rgb(30, 104, 52) 5px solid;
+    width: 50%;
+}
+.deportes img {
+    width: 100%;
+}
+.deportes p {
+    font-size: 90%;
+}
+.deportes a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/*--------------------------*/
+.imgn{
+    width: 45%;
+    float: left;
+    margin: 2% 0 0 3%;
+    border-bottom: 2px solid #000;
+}
+.imgn img{
+    width: 100%;
+}
+.imgn p{
+    float: left;
+    text-align: justify;
+    margin:2% 2% 0 2%;
+}
+.imgn a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin:1% 0 0 2%;
+}
+/*--------------------------*/
+.lateralderecho{
+    width: 24%;
+    float: left;
+    border-left: 1px solid #000;
+    margin: 2% 0 0 2%;
+}
+.panel {
+    float: left;
+    margin: 10% 2% 0 5%;
+    width: 90%;
+}
+
+.panel h1 {
+    border-top: rgb(2, 2, 2) 5px solid;
+    
+}
+.panel p {
+    font-size: 100%;
+}
+
+.panel a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/*--------------------------*/
+	/* para 320px o menos */
+
+	@media screen and (max-width:320px) {
+        .principal {
+            width: 100%;
+        }
+
+        /*===========================================*/
+
+        header {
+            float: left;
+            width: 100%;
+        }
+	    .texto1 {
+	        width: 100%;
+	        background: #f5eccc;
+	    }
+
+	    .texto1 h1 {
+            width: 96%;
+            font-size: 80%;
+	        float: left;
+	        background: #f5eccc;
+	    }
+
+	    .texto1 .pT {
+	        width: 96%;
+	        margin: 0 2% 0 2%;
+            float: left;
+	        background: #f5eccc;
+        }
+        .brecha {
+            float: none;
+            width: none;
+            margin: none;
+            display: none;
+        }
+        .p1 {
+            width: 45%;
+            font-size: 70%;
+            float: left;
+            margin: 2% 1% 2% 2%;
+            text-align: justify;
+        }
+
+        .p2 {
+            width: 45%;
+            float: left;
+             font-size: 70%;
+            margin: 2% 1% 2% 2%;
+            text-align: justify;
+        }
+
+        .p2 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .logo {
+            display: none;
+            float: left;
+            width: 25%;
+        }
+
+        .logo img {
+            float: left;
+            width: 100%;
+        }
+	}

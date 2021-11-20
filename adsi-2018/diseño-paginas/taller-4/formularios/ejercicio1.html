@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <style>
+        input {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+    
+        input:hover {
+            background-color: #3e8e41
+        }
+    
+        input:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+    <script type="text/javascript"> 
+        function ColorVerde() {
+            document.body.style.backgroundColor = 'green';
+        }
+        function ColorAmarillo() {
+            document.body.style.backgroundColor = '#ff0';
+        }
+        function ColorRojo() {
+            document.body.style.backgroundColor = '#f00';
+        }
+        function ColorAzul() {
+            document.body.style.backgroundColor = 'blue';
+        }
+        function ColorCafe() {
+            document.body.style.backgroundColor = 'brown';
+        } 
+    </script>
+
+    <input type="button" onclick="ColorVerde();" value="Verde">
+    <input type="button" onclick="ColorAmarillo();" value="Amarillo">
+    <input type="button" onclick="ColorRojo();" value="Rojo">
+    <input type="button" onclick="ColorAzul();" value="Azul">
+    <input type="button" onclick="ColorCafe();" value="Cafe">
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+  margin: 0 0 0 0;
+  padding: 0 0;
+}
+.principal{
+  width: 90%;
+  margin:4% 3% 0 4%;
+  background: #d1c7a0;
+}
+input[type="submit"]{
+  width: 10%;
+  float: right;
+  font-size: 20px;
+  margin:1% 0 3% 0;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+input[type="submit"]:hover {
+    background-color: blue; /* Green */
+    color: white;
+}

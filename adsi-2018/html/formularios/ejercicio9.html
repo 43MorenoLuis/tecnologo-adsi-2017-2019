@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <!-- Crear un formulario HTML (
+    <form>) tomando como base la imagen anexa, tener en cuenta que debe establecer los controles apropiados 
+        para cada campo del formulario..-->
+    <form>
+        <table border="1" cellspacing="0" cellpadding="4" style="float:right; margin:0 0 5px 0;">
+            <tr bgcolor="#ccc" align="center">
+                <td colspan="2">
+                    <label><b>NIVELACION</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Si
+                        <input type="radio" name="nivelacion">
+                    </label>
+                </td>
+                <td>
+                    <label>No
+                            <input type="radio" name="nivelacion">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="0" cellpadding="4" width="100%" style="margin:0 0 5px 0;">
+            <tr bgcolor="#ccc" align="center">
+                <td>
+                    <label><b>IDIOMA A ESTUDIAR</b></label>
+                </td>
+                <td>
+                    <label><b>HORARIO</b></label>
+                </td>
+                <td>
+                    <label><b>FECHA</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" style="width:98%;">
+                </td>
+                <td>
+                    <input type="tetx" style="width:98%;">
+                </td>
+                <td>
+                    <input type="date" style="width:98%;">
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="0" cellpadding="4" width="100%" style="margin:0 0 5px 0;">
+            <tr bgcolor="#000" align="center" >
+                <td>
+                    <label style="color:white;">
+                        <b>INFORMACION PERSONAL</b>
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <!--table border="1" cellspacing="0" cellpadding="4" style="float:right; margin:0 0 5px 0;">
+            <tr bgcolor="#fff" align="center">
+                <td>
+                    <img src="img/user2.png" title="Foto">
+                </td>
+            </tr>
+        </table-->
+
+        <table border="1" cellspacing="0" cellpadding="4" width="100%">
+            <tr align="center">
+                <td bgcolor="#ccc" colspan="4">
+                    <label>
+                        <b>NOMBRES Y APELLIDOS COMPLETOS</b>
+                    </label>
+                </td>
+                <td rowspan="7">
+                    <img src="img/user2.png" title="Foto">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="text" style="width:99.5%;">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>IDENTIFICACION</label>
+                </td>
+                <td>
+                    <label>EXPEDIDO EN</label>
+                </td>
+                <td>
+                    <labe>SEXO</labe>
+                </td>
+                <td>
+                    <labe>ESTADO CIVIL</labe>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <input type="text" style="width:98%;">
+                </td>
+                <td>
+                    <input type="text" style="width:98%;">
+                </td>
+                <td>
+                    <label>M
+                        <input type="radio" name="sexo">
+                    </label>
+                    <label>F
+                        <input type="radio" name="sexo">
+                    </label>
+                </td>
+                <td>
+                    <label>Soltero
+                        <input type="radio" name="estado">
+                    </label>
+                    <label>Casado
+                        <input type="radio" name="estado">
+                    </label>
+                    <label>Religioso
+                        <input type="radio" name="estado">
+                    </label>
+                    <label>Otro
+                        <input type="radio" name="estado">
+                    </label>
+                </td>
+            </tr>
+            <tr bgcolor="#ccc" align="center">
+                <td colspan="4">
+                    <label>
+                        <b>FECHA Y LUGAR DE NACIMIENTO</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>FECHA</label>
+                </td>
+                <td>
+                    <label>CUIDAD</label>
+                </td>
+                <td>
+                    <labe>DEPARTAMENTO</labe>
+                </td>
+                <td>
+                    <labe>PAIS</labe>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <input type="date" style="width:98%;">
+                </td>
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="0" cellpadding="4" width="100%" style="margin:0 0 0 0; border-top:none;">
+            <tr bgcolor="#ccc" align="center">
+                <td colspan="4">
+                    <label style="color:#000;">
+                        <b>DIRECCION PERSONAL</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label><b>DIRECCION</b></label>
+                </td>
+                <td>
+                    <label><b>TELEFONO</b></label>
+                </td>
+                <td>
+                    <labe><b>CIUDAD</b></labe>
+                </td>
+                <td>
+                    <labe><b>DIRECCION ELECTRONICA</b></labe>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <input type="text" style="width:98%;">
+                </td>
+                <td>
+                    <input type="text" style="width:98%;">
+                </td>
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="email" style="width:98%;">
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="0" cellpadding="4" width="100%" style="margin:0 0 2% 0; border-top:none;">
+            <tr bgcolor="#ccc" align="center">
+                <td colspan="5">
+                    <label style="color:#000;">
+                        <b>INFORMACION LABORAL</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>
+                        <b>EMPRESA</b>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <b>DIRECCION</b>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <b>TELEFONO</b>
+                    </label>
+                </td>
+                <td>
+                    <labe>
+                        <b>CIUDAD</b>
+                    </labe>
+                </td>
+                <td>
+                    <labe>
+                        <b>CARGO</b>
+                    </labe>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" style="width:98%;">
+                </td>
+                <td>
+                    <input type="text" style="width:98%;">
+                </td>
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="0" cellpadding="4" width="100%" style="margin:0 0 5px 0;">
+            <tr bgcolor="#ccc" align="center">
+                <td colspan="5">
+                    <label style="color:#000;">
+                        <b>ESTUDIOS REALIZADOS</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>
+                        <b>ULTIMO ESTUDIO REALIZADO</b>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <b>INSTITUCION</b>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <b>CIUDAD</b>
+                    </label>
+                </td>
+                <td>
+                    <labe>
+                        <b>TITULO</b>
+                    </labe>
+                </td>
+                <td>
+                    <labe>
+                        <b>FECHA</b>
+                    </labe>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <textarea style="width:98%;"></textarea>
+                </td>
+                <td>
+                    <textarea style="width:98%;"></textarea>
+                </td>
+                <td>
+                    <select style="width:98%;">
+                        <option> </option>
+                        <option> </option>
+                    </select>
+                </td>
+                <td>
+                   <textarea style="width:98%;"></textarea>
+                </td>
+                <td>
+                    <input type="date" style="width:98%;">
+                </td>
+            </tr>
+        </table>
+
+        <table cellspacing="0" cellpadding="4" width="100%" style="margin:0 0 5px 0;">
+            <tr align="center">
+                <td colspan="5">
+                    <label>
+                        <b>Vinculo que usted a tenido o tiene con la UCO</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>
+                        <b>Egresado UCO</b>
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <b>Estudiante UCO</b>
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <b>Empleado UCO</b>
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <labe>
+                        <b>Grupo empresarial</b>
+                        <input type="checkbox">
+                    </labe>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="0" cellpadding="4" width="100%" style="margin:0 0 2% 0;">
+            <tr bgcolor="#ccc" align="center">
+                <td colspan="5">
+                    <label style="color:#000;">
+                        <b>INFORMACION ADICIONAL</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>
+                        <b>Motivos que lo indujeron a escoger el Centro de Idiomas de la UCO</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <textarea style="width:98%;"></textarea>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>
+                        <b>¿Porque quieres aprender este idioma?</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <textarea style="width:98%;"></textarea>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>
+                        <b>¿Como se entero del programa?</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <textarea style="width:98%;"></textarea>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>
+                        <b>Mencione otros cursos o temas de su interes</b>
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <textarea style="width:98%;"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellspacing="0" width="100%" >
+            <tr align="center">
+                <td style="border-right:1px solid #000; border-left:none; border-top:none; border-bottom:none;">
+                    <textarea style="width:98%;" type="text"></textarea>
+                </td>
+                <td style="border:none;" colspan="3">
+                    <label>
+                        <b>Firma Autorizada</b>
+                    </label>
+                </td>
+                
+            </tr>
+            <tr align="center">
+                <td style="border-right:1px solid #000; border-left:none; border-top:none; border-bottom:none;">
+                    <label>
+                        <b>Firma participante</b>
+                    </label>
+                </td>
+                <td style="border:none;">
+                    <textarea style="width:98%;" type="text"></textarea>
+                </td>
+                <td style="width:5%; border:none;">
+                    <label>
+                        <b>Descuento %</b>
+                    </label>
+                </td>
+                <td style="width:3%; border:none;">
+                    <input style="width:20px;" type="text">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

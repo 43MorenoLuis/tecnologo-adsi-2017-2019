@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <!-- 4. Crear un formulario que solicite el ingreso del nombre de una persona y permita
+        votar el sitio. Mediante un cuadro de selección el visitante puede elegir entre las 
+        siguientes opciones: Excelente, Muy Bueno, Bueno, Regular y Malo. -->
+    <form>
+        <table border="1" cellspacing="0" cellpadding="4">
+            <tr>
+                <td align="center" bgcolor="#ccc">
+                    <label>Nombre</label>
+                </td>
+                <td colspan="5" align="center" bgcolor="#ccc">
+                    <label>Valoracion</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Excelente
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+                <td>
+                    <label>Muy Bueno
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+                <td>
+                    <label>Bueno
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+                <td>
+                    <label>Regular
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+                <td>
+                    <label>Malo
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center">
+                    <input type="submit" value="Guardar">
+                    <input type="reset" value="Cancelar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

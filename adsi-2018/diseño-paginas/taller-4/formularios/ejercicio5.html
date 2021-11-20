@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+
+<style>
+    input[type="text"],
+    select {
+        width: 85%;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="button"] {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rgb(55, 0, 253);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+
+    input[type="button"]:hover {
+        background-color: #364bc4
+    }
+
+    input[type="button"]:active {
+        background-color: #364bc4;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    #principal{
+        width: 21%;
+        background: rgb(177, 177, 177);
+        padding: 1% 1%;
+    }
+    #cadena{
+        width: 100%;
+    }
+    #fila1{
+        width: 100%;
+        margin: 1% 2% 1% 2%;
+    }
+</style>
+<script type="text/javascript">
+    var nro1;
+    var nro2;
+    var operador;
+
+    function Validar(valor) {
+
+        switch(valor){
+            case 9:
+                document.getElementById("panel").value += "9";
+            break;
+            case 8:
+                document.getElementById("panel").value += "8";
+            break;
+            case 7:
+                document.getElementById("panel").value += "7";
+            break;
+            case 6:
+                document.getElementById("panel").value += "6";
+            break;
+            case 5:
+                document.getElementById("panel").value += "5";
+            break;
+            case 4:
+                document.getElementById("panel").value += "4";
+            break;
+            case 3:
+                document.getElementById("panel").value += "3";
+            break;
+            case 2:
+                document.getElementById("panel").value += "2";
+            break;
+            case 1:
+                document.getElementById("panel").value += "1";
+            break;
+            case 0:
+                document.getElementById("panel").value += "0";
+            break;
+        }
+    }
+    function igual(valor){
+        switch(valor){
+            case "+":
+                nro1=document.getElementById("panel").value;
+                operador="+";
+                var panel=document.getElementById("panel");
+                panel.value="";            
+            break;
+            case "-":
+                nro1=document.getElementById("panel").value;
+                operador = "-";
+                var panel=document.getElementById("panel");
+                panel.value="";
+            break;
+            case "*":
+                nro1=document.getElementById("panel").value;
+                operador = "*";
+                var panel=document.getElementById("panel");
+                panel.value="";
+            break;
+            case "/":
+                nro1 = document.getElementById("panel").value;
+                operador = "/";
+                var panel = document.getElementById("panel");
+                panel.value = "";
+            break;
+            case "CE":
+                var panel = document.getElementById("panel");
+                panel.value = "";
+            break;
+        } 
+    }
+    function igual2(valor) {
+            switch (valor) {
+                case "=":
+                if(operador=="+"){
+                    nro2 = document.getElementById("panel").value;
+                    var panel = document.getElementById("panel");
+                    panel.value = parseInt(nro1) + parseInt(nro2);
+                }
+                if(operador=="-"){
+                    nro2 = document.getElementById("panel").value;
+                    var panel = document.getElementById("panel");
+                    panel.value = parseInt(nro1) - parseInt(nro2);
+                }
+                if(operador=="*"){
+                    nro2 = document.getElementById("panel").value;
+                    var panel = document.getElementById("panel");
+                    panel.value = parseInt(nro1) * parseInt(nro2);
+                }
+                if(operador=="/"){
+                    nro2 = document.getElementById("panel").value;
+                    var panel = document.getElementById("panel");
+                    panel.value = parseInt(nro1) / parseInt(nro2);
+                }  
+                break;
+            }
+        }
+</script>
+    <div id="principal">
+    <div id="cadena">
+        <input type="text" name="" id="panel">
+    </div>
+    <div id="fila1">
+        <input type="button" value="9" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="8" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="7" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="6" id="numero" onclick="Validar(parseInt(this.value))">
+    </div>
+    <div id="fila1">
+        <input type="button" value="5" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="4" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="3" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="2" id="numero" onclick="Validar(parseInt(this.value))">
+    </div>
+    <div id="fila1">
+        <input type="button" value="1" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="0" id="numero" onclick="Validar(parseInt(this.value))">
+        <input type="button" value="+" onclick="igual(this.value)">
+        <input type="button" value="-" onclick="igual(this.value)">
+    </div>
+    <div id="fila1">
+        <input type="button" value="*" onclick="igual(this.value)">
+        <input type="button" value="/" onclick="igual(this.value)">
+        <input type="button" value="=" onclick="igual2(this.value)">
+        <input type="button" value="CE" onclick="igual(this.value)">
+    </div>
+</div>
+</body>
+</html>

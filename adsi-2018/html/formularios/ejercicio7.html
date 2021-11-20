@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <!-- 7. Crear un formulario que solicite el ingreso del nombre de una persona y 4 elementos de tipo 
+        checkbox para que seleccione los lenguajes de programación que conoce, y dos controles 
+        tipo lista, el primero para los motores de base de datos y un último para los navegadores que utiliza 
+        (todos con al menos 4 opciones). -->
+    <form>
+        <table border="1" cellspacing="0" cellpadding="4">
+            <tr align="center" bgcolor="#ccc">
+                <td colspan="2">
+                    <label>Nombre</label>
+                </td>
+                <td colspan="4">
+                    <label>Lenguajes de programacion</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text">
+               </td>
+                <td>
+                    <label>Java:
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <label>PHP:
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <label>Android:
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>
+                    <label>C++:
+                        <input type="checkbox">
+                    </label>
+                </td>
+            </tr>
+            <tr align="center" bgcolor="#ccc">
+                <td colspan="2">
+                    <label>Motores base datos</label>
+                </td>
+                <td colspan="4">
+                    <label>Navegadores utilizados</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select>
+                        <option>MySQL</option>
+                        <option>Oracle</option>
+                        <option>PostgreSQL</option>
+                        <option>PHPMyAdmind</option>
+                    </select>
+                </td>
+                <td colspan="2">
+                    <select>
+                        <option>Google Chrome</option>
+                        <option>Opera</option>
+                        <option>Firefox</option>
+                        <option>Internet Explored</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center">
+                    <input type="submit" value="Guardar">
+                    <input type="reset" value="Cancelar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

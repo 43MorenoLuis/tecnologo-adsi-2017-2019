@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <style>
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+        
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="button"] {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: rgb(55, 0, 253);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        input[type="button"]:hover {
+            background-color: #364bc4
+        }
+
+        input[type="button"]:active {
+            background-color: #364bc4;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+    </style>
+    <script type="text/javascript">
+        function Validar() {
+            var valor=document.getElementById('valor').value;
+            var origen=document.getElementById('selectOrigen').value;
+            var destino=document.getElementById('selectDestino').value;
+
+            if(origen==1 && destino==1){
+                var res=valor*1.00;
+                var tot=document.getElementById('convertir');
+                tot.value=res+"Pesos";
+            }else if(origen==2 && destino==1){
+                var res=valor*2.93321;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }else if(origen==3 && destino==1){
+                var res=valor*3.42758;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }else if(origen==1 && destino==2){
+                var res=valor*0.0003;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }else if(origen==2 && destino==2){
+                var res=valor*1.00;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }else if(origen==3 && destino==2){
+                var res=valor*1.17;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }else if(origen==1 && destino==3){
+                var res=valor*0.0003;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }else if(origen==2 && destino==3){
+                var res=valor*0.86;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }else if(origen==3 && destino==3){
+                var res=valor*1.00;
+                var tot=document.getElementById('convertir');
+                tot.value=res;
+            }
+        }
+    </script>
+    <form>
+        <label>Valor:</label>
+        <input type="text" id="valor" placeholder="00000000" required>
+        <hr>
+        <label>Moneda Origen:</label>
+        <select name="" id="selectOrigen">
+            <option value="0">Seleccione...</option>
+            <option value="1">Pesos</option>
+            <option value="2">Dolares</option>
+            <option value="3">Euros</option>
+        </select>
+
+        <label>Moneda Destino:</label>
+        <select name="" id="selectDestino">
+            <option value="0">Seleccione...</option>
+            <option value="1">Pesos</option>
+            <option value="2">Dolares</option>
+            <option value="3">Euros</option>
+        </select>
+        <hr>
+        <label>Conversion:</label>
+        <input type="text" id="convertir" placeholder="00000000" disabled>
+
+        <input type="button" onclick="Validar();" value="Calcular">
+    </form>
+</body>
+
+</html>

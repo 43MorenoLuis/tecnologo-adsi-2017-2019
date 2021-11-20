@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <style>
+        #nombre, #tel, #direc, #email, textarea{
+            width: 95%;
+            padding: 12px 20px;
+            margin: 8px 0;
+
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="button"]{
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: rgb(55, 0, 253);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        input[type="reset"]{
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: rgb(253, 0, 0);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+    
+        input[type="button"]:hover{
+            background-color: #364bc4
+        }
+        input[type="reset"]:hover {
+            background-color: #cf3232
+        }
+    
+        input[type="button"]:active{
+            background-color: #364bc4;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        input[type="reset"]:active {
+            background-color: #cf3232;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        table {
+            width:100%; 
+            margin:2% 0 0 0;
+            text-align: center;
+        }
+        td{
+            border:1px solid #000;
+            
+            border-radius: 10px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function Validar() {
+            var nom = document.getElementById("nombre");
+            var tel = document.getElementById("tel");
+            var dir = document.getElementById("direc");
+            var email = document.getElementById("email");
+
+        if(nom.value=="" || tel.value=="" || dir.value=="" || email.value==""){
+            if(nom.value==""){
+                alert('Coloque un nombre');
+                nom.style.border = '2px solid rgb( 255, 0, 0)';
+                nom.focus();
+            }else{
+                nom.style.border = '2px solid rgb(0, 255, 15)';
+            }
+            if(tel.value==""){
+                alert('Coloque un numero telefonico');
+                tel.style.border = '2px solid rgb( 255, 0, 0)';
+                tel.focus();
+            }else{
+                tel.style.border = '2px solid rgb(0, 255, 15)';
+            } 
+            if(dir.value==""){
+                alert('Coloque una direccion');
+                dir.style.border = '2px solid rgb( 255, 0, 0)';
+                dir.focus();
+            }else{
+                dir.style.border = '2px solid rgb(0, 255, 15)';
+            }
+            if(email.value==""){
+                alert('Coloque un correo');
+                email.style.border = '2px solid rgb( 255, 0, 0)';
+                email.focus();
+            }else{
+                email.style.border = '2px solid rgb(0, 255, 15)';
+            } 
+        }else{
+            tr = document.createElement('tr');
+                td1 = document.createElement('td');
+                td2 = document.createElement('td');
+                td3 = document.createElement('td');
+                td4 = document.createElement('td');
+
+                nombre = document.createTextNode(nom.value);
+                telefono = document.createTextNode(tel.value);
+                direccion = document.createTextNode(dir.value);
+                correo = document.createTextNode(email.value);
+
+                //tr.appendChild(nombre);
+                td1.appendChild(nombre);
+                td2.appendChild(telefono);
+                td3.appendChild(direccion);
+                td4.appendChild(correo);
+
+                document.getElementById('tabla').appendChild(tr);
+                document.getElementById('tabla').appendChild(td1);
+                document.getElementById('tabla').appendChild(td2);
+                document.getElementById('tabla').appendChild(td3);
+                document.getElementById('tabla').appendChild(td4);
+        } 
+            
+        }
+    </script>
+    <form>
+        <label>Nombre:</label>
+            <input type="text" id="nombre" placeholder="Pepito Perez" maxlength="10" required>
+        <label>Telefono:</label>
+            <input type="tel" id="tel" placeholder="123456789" min="1" maxlength="10" required>
+        <label>Direccion:</label>
+<textarea id="direc" cols="20" rows="4" maxlength="75" placeholder="Calle 45 #90-27" required></textarea>
+        <label>Correo Electronico</label>
+            <input type="email" id="email" placeholder="ejemplo@gmail.com" maxlength="30" required>
+
+            <input type="button" onclick="Validar();" value="Enviar">
+            <input type="reset" value="Cancelar">
+    </form>
+
+    <table id="tabla">
+        <tr>
+            <td>
+                Nombre
+            </td>
+            <td>
+                Telefono
+            </td>
+            <td>
+                Direccion
+            </td>
+            <td>
+                Correo Electronico
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

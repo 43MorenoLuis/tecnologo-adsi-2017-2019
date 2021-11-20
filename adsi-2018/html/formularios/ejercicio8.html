@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <!-- 8. Crear un formulario que solicite cargar los datos personales de una persona (solicitar al menos 
+        10 campos de información diferentes) y el país donde vive, este último elemento mediante un control 
+        de tipo select permitir seleccionar el pais. (Agregue la propiedad size al elemento select con el valor 5).-->
+    <form>
+        <table border="1" cellspacing="0" cellpadding="4">
+            <tr align="center" bgcolor="#ccc">
+                <td colspan="4">
+                    <label>Datos Personales</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Primer Nombre
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>Segundo Nombre
+                        <input type="text">
+                    </label>
+                    </td>
+                <td>
+                    <label>Primer Apellido
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>Segundo Apellido
+                        <input type="text">
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>Pais
+                        <select size="5">
+                            <option>Colombia</option>
+                            <option>Argentina</option>
+                            <option>Panama</option>
+                            <option>Chile</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label>Correo
+                        <input type="email">
+                    </label>
+                </td>
+                <td>
+                    <label>Telefono
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>Ocupacion
+                        <input type="text">
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>Nacionalidad
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>Sexo
+                        M<input type="radio" name="sexo">
+                        F<input type="radio" name="sexo">
+                    </label>
+                </td>
+                <td>
+                    <label>Fecha Naciemiento
+                        <input type="date">
+                    </label>
+                </td>
+                <td>
+                    <label>Fax
+                        <input type="text">
+                    </label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label>Codigo Postal
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>DNI
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>Edad
+                        <input type="number">
+                    </label>
+                </td>
+                <td>
+                    <label>Ciudad Vive
+                        <input type="text">
+                    </label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="6" align="center">
+                    <input type="submit" value="Guardar">
+                    <input type="reset" value="Cancelar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

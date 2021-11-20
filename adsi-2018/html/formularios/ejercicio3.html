@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <!--3. Solicitar el ingreso del nombre de una persona y el máximo nivel en estudios alcanzado 
+        (sin estudios, estudios primarios, estudios secundarios o estudios de educación superior) 
+        Utilizar controles de tipo radio para la selección de estudios realizados. -->
+    <form>
+        <table border="1" cellspacing="0" cellpadding="4">
+            <tr>
+                <td align="center" bgcolor="#ccc">
+                    <label>Nombre:</label>
+                </td>
+                <td colspan="4" align="center" bgcolor="#ccc">
+                    <label>Estudios</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Sin Estudios:
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+                <td>
+                    <label>Estudios Primarios:
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+                <td>
+                    <label>Estudios Secundarios:
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+                <td>
+                    <label>Estudios Educacion Superior:
+                        <input type="radio" name="estudio">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center">
+                    <input type="submit" value="Guardar">
+                    <input type="reset" value="Cancelar">
+                </td>   
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

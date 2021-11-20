@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <style>
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+   
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+    </style>
+    <script type="text/javascript">
+        function Imagen() {
+            $vlor=document.getElementById("seleccion").value;
+            if($vlor==1){
+                document.getElementById('imagen').src = "img/img1.jpg";
+                document.body.style.backgroundColor = 'green';
+            }else if($vlor==2){
+                document.getElementById('imagen').src = "img/img2.jpg";
+                document.body.style.backgroundColor = '#ff0';
+            }else if($vlor==3){
+                document.getElementById('imagen').src = "img/img3.jpg";
+                document.body.style.backgroundColor = 'blue';
+            }else if($vlor==0){
+                document.getElementById('imagen').src = "img/img0.jpg";
+                document.body.style.backgroundColor = 'white';
+            }
+        }
+    </script>
+
+    <label for="country">Imagenes</label>
+    <select id="seleccion" name="country" onclick="Imagen();">
+        <option value="0">Seleccione...</option>
+        <option value="1">Imagen 1</option>
+        <option value="2">Imagen 2</option>
+        <option value="3">Imagen 3</option>
+    </select>
+
+    <img src="img/img0.jpg" id="imagen" width="50%">
+
+</body>
+
+</html>
